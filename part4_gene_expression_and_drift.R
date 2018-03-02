@@ -231,18 +231,3 @@ corr[-iex][io[1:10]]
 pval[-iex][io[1:10]]
 rlab[-iex][io[1:10]]
 
-# results for right colon: 643 gene-island pairs
-# > sum(corr[-iex][tmp$qvalues < 0.05] > 0)
-# [1] 32
-# > sum(corr[-iex][tmp$qvalues < 0.05] < 0)
-# [1] 341
-# >
-
-# results for right colon: 640 gene-island pairs
-# > sum(corr[-iex][tmp$qvalues < 0.05] > 0)
-# [1] 18
-# > sum(corr[-iex][tmp$qvalues < 0.05] < 0)
-# [1] 112
-# 
-
-
