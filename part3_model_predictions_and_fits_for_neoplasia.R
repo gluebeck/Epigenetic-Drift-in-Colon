@@ -16,6 +16,9 @@ for(m in 1:Mp) {
 ## assuming intercepts are similar between left and right colon for the drift islands
 eps.left = eps.right = intercept.normal
 
+#### requires functions to compute sojourn time distributions (adenoma-to-carcinoma) 
+source('./MSCE_conditional_sojourn_time.R')
+
 ####  prepare left-right sojourn time predictions
 source('./Simulations/parameters_males_right_colon.R')
 a = seq(20,90,1)
