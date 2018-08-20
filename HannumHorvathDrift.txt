@@ -1,0 +1,149 @@
+#### results for clock comparison
+
+## correlations with normal tissue age (SMS, GICares)
+
+Horvath1: 0.8420565 
+Horvath2: 0.7826881
+Hannum89: 0.7777896 
+Hannum71: 0.6583051 
+
+> cor.test(s,age.cancer.hannum71)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.hannum
+t = 5.6049, df = 320, p-value = 4.502e-08
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1960987 0.3953672
+sample estimates:
+      cor 
+0.2989889 
+
+
+> cor.test(s,age.cancer.hannum89)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.hannum
+t = 5.5035, df = 320, p-value = 7.641e-08
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1908913 0.3907932
+sample estimates:
+      cor 
+0.2940547 
+
+
+> cor.test(s,age.cancer.horvath1.adj)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.horvath1.adj
+t = 1.2498, df = 320, p-value = 0.2123
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.03990393  0.17764385
+sample estimates:
+       cor 
+0.06969859 
+
+> cor.test(s,age.cancer.horvath2.adj)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.horvath2.adj
+t = 5.9537, df = 320, p-value = 6.89e-09
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2138763 0.4109085
+sample estimates:
+      cor 
+0.3157928 
+
+> cor.test(s,age.cancer.hannum71.adj)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.hannum.adj
+t = 8.9027, df = 320, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.3534620 0.5290812
+sample estimates:
+      cor 
+0.4455477 
+
+> cor.test(s,age.cancer.hannum89.adj)
+
+	Pearson's product-moment correlation
+
+data:  s and age.cancer.hannum.adj
+t = 2.6567, df = 320, p-value = 0.008286
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.03821925 0.25215398
+sample estimates:
+      cor 
+0.1469041 
+
+> cor.test(age.cancer.horvath2.adj,age.cancer.hannum.adj)
+
+	Pearson's product-moment correlation
+
+data:  age.cancer.horvath2.adj and age.cancer.hannum.adj
+t = 11.497, df = 320, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.4584580 0.6136973
+sample estimates:
+      cor 
+0.5406645 
+
+#### t.test on re-calibrated distribution 
+
+	Welch Two Sample t-test
+
+data:  s and age.cancer.horvath1.adj2
+t = 0.28019, df = 634.01, p-value = 0.7794
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.793492  5.056181
+sample estimates:
+mean of x mean of y 
+ 61.11680  60.48545 
+
+> t.test(s,age.cancer.horvath2.adj2)
+
+	Welch Two Sample t-test
+
+data:  s and age.cancer.horvath2.adj2
+t = 1.3504, df = 636.11, p-value = 0.1774
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.392095  7.521836
+sample estimates:
+mean of x mean of y 
+ 61.11680  58.05193 
+ 
+> t.test(s,age.cancer.hannum.adj2)
+
+	Welch Two Sample t-test
+
+data:  s and age.cancer.hannum.adj2
+t = -1.1557, df = 599.56, p-value = 0.2483
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.588632  1.707007
+sample estimates:
+mean of x mean of y 
+ 61.11680  63.55761 
+
+
+##############################################
+1. for each isl-gene pair
+
+pop diff tumor minus normal dirft for matched 
+
+Venn diagram left/right drift-CGI- gene
+
